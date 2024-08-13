@@ -17,6 +17,32 @@
         </div>
         <div class="shop-container">
             <h1>SHOP</h1>
+            <div class="V2-carousel">
+                <!-- タブ -->
+                <input type="radio" id="V2-tab1" name="V2-carousel" checked>
+                <input type="radio" id="V2-tab2" name="V2-carousel">
+                <input type="radio" id="V2-tab3" name="V2-carousel">
+
+                <!-- スライド -->
+                <div class="V2-slides">
+                    <div class="V2-slide" id="V2-slide1">
+                        <img src="../assets/images/inner1.jpg" alt="Image 1">
+                    </div>
+                    <div class="V2-slide" id="V2-slide2">
+                        <img src="../assets/images/inner2.jpg" alt="Image 2">
+                    </div>
+                    <div class="V2-slide" id="V2-slide3">
+                        <img src="../assets/images/inner3.jpg" alt="Image 3">
+                    </div>
+                </div>
+
+                <!-- ナビゲーション -->
+                <div class="V2-tabs">
+                    <label for="V2-tab1">1</label>
+                    <label for="V2-tab2">2</label>
+                    <label for="V2-tab3">3</label>
+                </div>
+            </div>
         </div>
     </div>
     <Footer/>
@@ -68,5 +94,78 @@ export default defineComponent({
 }
 .concept-container{
     font-weight: bold;
+}
+.shop-container{
+    text-align: center;
+}
+
+
+.V2-carousel {
+    width: 100%;
+    height: 70%;
+    position: relative;
+    justify-content: center;
+    overflow: hidden;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.V2-tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.V2-tabs label {
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #ddd;
+    margin: 0 5px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.V2-tabs label:hover {
+    background-color: #bbb;
+}
+
+.V2-slides {
+    position: relative;
+    width: 100%;
+    height: 70%;
+}
+
+.V2-slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70%;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.V2-slide img {
+    width: 50%;
+    height: 20%;
+    object-fit: cover;
+}
+
+/* チェックされたタブに対応するスライドを表示 */
+#V2-tab1:checked ~ .V2-slides #V2-slide1,
+#V2-tab2:checked ~ .V2-slides #V2-slide2,
+#V2-tab3:checked ~ .V2-slides #V2-slide3 {
+    opacity: 1;
+    position: relative;
+}
+
+#V2-tab1:checked ~ .V2-tabs label[for="V2-tab1"],
+#V2-tab2:checked ~ .V2-tabs label[for="V2-tab2"],
+#V2-tab3:checked ~ .V2-tabs label[for="V2-tab3"] {
+    background-color: #888;
+    color: white;
 }
 </style>
