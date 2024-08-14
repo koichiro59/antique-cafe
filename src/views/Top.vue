@@ -38,9 +38,9 @@
 
                 <!-- ナビゲーション -->
                 <div class="V2-tabs">
-                    <label for="V2-tab1">1</label>
-                    <label for="V2-tab2">2</label>
-                    <label for="V2-tab3">3</label>
+                    <div class="nav-image1"><label for="V2-tab1"><img src="../assets/images/inner1.jpg" alt="Thumbnail 1"></label></div>
+                    <div class="nav-image2"><label for="V2-tab2"><img src="../assets/images/inner2.jpg" alt="Thumbnail 2"></label></div>
+                    <div class="nav-image3"><label for="V2-tab3"><img src="../assets/images/inner3.jpg" alt="Thumbnail 3"></label></div>
                 </div>
             </div>
         </div>
@@ -121,17 +121,11 @@ input[type="radio"] {
 .V2-tabs label {
     padding: 10px 20px;
     cursor: pointer;
-    background-color: #ddd;
     margin: 0 5px;
     border-radius: 5px;
     font-weight: bold;
     transition: background-color 0.3s ease;
 }
-
-.V2-tabs label:hover {
-    background-color: #bbb;
-}
-
 .V2-slides {
     position: relative;
     width: 100%;
@@ -165,7 +159,22 @@ input[type="radio"] {
 #V2-tab1:checked ~ .V2-tabs label[for="V2-tab1"],
 #V2-tab2:checked ~ .V2-tabs label[for="V2-tab2"],
 #V2-tab3:checked ~ .V2-tabs label[for="V2-tab3"] {
-    background-color: #888;
     color: white;
+}
+.V2-tabs img {
+    width: 50px; /* 縮小画像のサイズを指定 */
+    height: auto;
+    border: 2px solid transparent; /* 枠線を透明に */
+    transition: border-color 0.3s;
+}
+.V2-tabs .nav-image1, 
+.V2-tabs .nav-image2, 
+.V2-tabs .nav-image3 {
+    margin: 0 5px;
+}
+.V2-tabs input:checked + .nav-image1 label img,
+.V2-tabs input:checked + .nav-image2 label img,
+.V2-tabs input:checked + .nav-image3 label img {
+    border-color: #000; /* 選択されたタブに枠線を表示 */
 }
 </style>
