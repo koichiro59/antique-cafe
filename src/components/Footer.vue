@@ -1,7 +1,6 @@
 <template>
     <footer>
         <nav class="nav-container">
-            <span class="logo">antique cafe</span>
             <router-link to="./" class="nav-item">TOP</router-link>
             <router-link to="./product" class="nav-item">PRODUCT</router-link>
             <router-link to="./shop" class="nav-item">SHOP</router-link>
