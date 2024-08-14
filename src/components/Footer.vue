@@ -35,7 +35,8 @@ footer{
 }
 .nav-item{
     display: inline;
-        text-decoration: none;
+    text-decoration: none;
+    color: #333;
 }
 .copyright-container{
     text-align: center;

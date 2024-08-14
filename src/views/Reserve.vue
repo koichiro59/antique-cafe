@@ -26,7 +26,8 @@
                 <input type="text" class="input-text">
             </div>
         </div>
-        <button class="confirm-btn">予約内容を確認する</button>
+        <button class="confirm-btn"><router-link to="./" class="nav-item">予約する</router-link></button>
+        <div class="blank"></div>
     </div>
     <Footer/>
 </template>
@@ -48,6 +49,7 @@ export default defineComponent({
 <style scoped>
 .container{
     margin: 0 100px;
+    background-color: #eaeaea;
 }
 .reserve-container{
     text-align: left;
@@ -75,7 +77,20 @@ export default defineComponent({
     padding: 10px;
 }
 .confirm-btn{
-    padding: 10px;
+    padding: 20px;
+    font-size: 16px;
     margin: 50px 10px;
+    background-color: #D4432D;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+.nav-item{
+    text-decoration: none;
+    color: #fff;
+}
+.blank{
+    height: 60px;
+    background-color: #fff;
 }
 </style>
