@@ -2,7 +2,7 @@
     <header>
         <div class="logo-container">
             <span class="logo">
-                <router-link to="./" class="nav-item">antique cafe</router-link>
+                <router-link to="./" class="nav-item"><img src="../assets/images/logo1.svg" alt=""></router-link>
             </span>
         </div>
         <div class="reserve-container">
@@ -54,11 +54,17 @@ header{
 }
 .logo-container{
     flex-grow: 1;
-    padding: 30px;
+    padding: 10px;
+    margin-left: 20px;
     text-align: left;
 }
 .logo{
     font-size: 20px;
+}
+.logo img{
+  position: relative;
+  width: 15%;
+  height: auto;
 }
 .reserve-container{
     position: fixed;
@@ -86,6 +92,7 @@ header{
     text-align: right;
     top: 0;
     right: 30px;
+        z-index: 3;
 }
 .hamburger-menu {
   position: relative;
@@ -151,13 +158,13 @@ header{
   transition: right 0.3s ease; /* Adjusted the transition to move horizontally */
   pointer-events: none;
   text-align: left;
-
 }
 .menu.open {
   opacity: 1;
   transform: translateY(0);
   pointer-events: auto;
   right: 0;
+
 }
 
 .menu ul {
