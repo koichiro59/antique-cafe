@@ -183,4 +183,9 @@ input[type="radio"] {
 .V2-tabs input:checked + .nav-image3 label img {
     border-color: #000; /* 選択されたタブに枠線を表示 */
 }
+@media(max-width: 768px){
+    .concept-container{
+        margin: 20px;
+    }
+}
 </style>

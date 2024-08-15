@@ -101,4 +101,13 @@ export default defineComponent({
     width: 70%;
     height: auto;
 }
+@media(max-width: 768px){
+    .container{
+        margin: 20px;
+    }
+    .product-detail img{
+        width: 100%;
+        height: auto;
+    }
+}
 </style>

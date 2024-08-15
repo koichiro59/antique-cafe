@@ -115,4 +115,17 @@ input[type="datetime-local"] {
   box-sizing: border-box;
   font-size: 14px;
 }
+@media(max-width: 768px){
+    .container{
+        margin: 20px;
+    }
+    .pulldown{
+        width: 50%;
+        padding: 10px;
+    }
+    .input-number{
+        width: 50%;
+        padding: 10px;
+    }
+}
 </style>

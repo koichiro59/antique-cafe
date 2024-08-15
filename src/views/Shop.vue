@@ -45,7 +45,7 @@
                 </div>
             </div>
             <p>お電話によるご予約を承っておりません。ホームページ内のご予約サイトからお問い合わせお願い致します。</p>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6483.042557061923!2d139.72283713911426!3d35.664164557028734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b7973f29357%3A0x842b73df6eb54d22!2z44CSMTA2LTAwMzIg5p2x5Lqs6YO95riv5Yy65YWt5pys5pyo77yX5LiB55uu!5e0!3m2!1sja!2sjp!4v1723631623633!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6483.042557061923!2d139.72283713911426!3d35.664164557028734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b7973f29357%3A0x842b73df6eb54d22!2z44CSMTA2LTAwMzIg5p2x5Lqs6YO95riv5Yy65YWt5pys5pyo77yX5LiB55uu!5e0!3m2!1sja!2sjp!4v1723631623633!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     <Footer/>
 </template>
@@ -71,6 +71,7 @@ export default defineComponent({
 
 .shop-container{
     text-align: center;
+    margin: 0 100px;
 }
 .V2-carousel {
     width: 100%;
@@ -155,5 +156,13 @@ input[type="radio"] {
     display: inline-block;
     padding: 0 20px;
     border-left: #a4cabc 6px solid;
+}
+iframe{
+    margin-bottom: 30px;
+}
+@media(max-width: 768px){
+    .shop-container{
+        margin: 20px;
+    }
 }
 </style>
