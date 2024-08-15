@@ -10,10 +10,10 @@
         <div class="product-container">
             <h1>PRODUCT</h1>
             <img src="../assets/images/product4.jpg" alt="">
-            <p>コーヒーの本場イタリアのコーヒー豆を使用したオリジナルブレンド</p>
+            <div><span class="text">コーヒーの本場イタリアのコーヒー豆を使用したオリジナルブレンド</span></div>
             <img src="../assets/images/product6.jpg" alt="">
             <img src="../assets/images/product7.jpg" alt="">
-            <p>定番と季節素材を取り入れた3~4種類のケーキやタルトを販売しています</p>
+            <div><span class="text">定番と季節素材を取り入れた3~4種類のケーキやタルトを販売しています</span></div>
         </div>
         <div class="shop-container">
             <h1>SHOP</h1>
@@ -74,32 +74,38 @@ export default defineComponent({
 </script>
 
 <style scoped>
-.img-text{
-    position: absolute;
-    text-align: left;
-    top: 120px;
-    left: 30px;
-    color: #333333;
-    font-size: 64px;
-    z-index: 2;
+.concept-container{
+    display: inline-block;
+    margin-top: 20px;
+    font-weight: bold;
+    padding: 10px;
+    border-left: #a4cabc 6px solid;
 }
 .product-container{
+    display: inline-block;
     margin-top: 100px;
+    background: #fff;
+}
+.product-container div{
+    margin: 20px;
+}
+.text{
+    border-left: #a4cabc 6px solid;
+    padding: 10px;
+    margin: 10px;
 }
 .product-container img{
+    position: relative;
     width: 45%;
     height:45%;
     overflow: hidden;
     margin: 10px 30px;
 }
-.concept-container{
-    font-weight: bold;
-}
 .shop-container{
+    display: inline-block;
     text-align: center;
+    background: #fff;
 }
-
-
 .V2-carousel {
     width: 100%;
     height: 70%;

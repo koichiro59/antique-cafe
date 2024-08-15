@@ -1,7 +1,7 @@
 <template>
     <Header/>
         <div class="container">
-            <h1 class="title">Product</h1>
+            <h1 class="title">PRODUCT</h1>
             <h2 class="sub-title">コーヒー</h2>
             <div class="coffee-container">
                 <div class="product-detail">
@@ -70,11 +70,14 @@ export default defineComponent({
     text-align: left;
     margin-top:50px;
     margin-left: 30px;
+    border-left: #a4cabc 6px solid;
+    padding: 10px;
 }
 .product-detail{
-    width: 400px;
-    height: 200px;
-    margin-bottom: 50px;
+    text-align: left;
+    width: 33%;
+    height: auto;
+    margin: 0 20px 50px 30px;
 }
 .coffee-container{
     display: flex;
